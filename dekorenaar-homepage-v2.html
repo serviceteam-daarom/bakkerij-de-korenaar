@@ -1,0 +1,1979 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echte Bakker De Korenaar | Ambachtelijk Brood & Banket Surhuisterveen</title>
+    <meta name="description" content="Bestel vers ambachtelijk brood, luxe taarten en heerlijk banket bij De Korenaar. ✓ Gratis bezorging vanaf €30 ✓ Vandaag besteld, morgen in huis ✓ 30+ jaar vakmanschap">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #8B4513;
+            --secondary-color: #D2691E;
+            --accent-color: #F4A460;
+            --dark-brown: #3E2723;
+            --light-cream: #FFF8DC;
+            --white: #FFFFFF;
+            --text-dark: #2C2C2C;
+            --text-light: #6B6B6B;
+            --success-green: #4CAF50;
+            --gold: #FFD700;
+            --light-gray: #F5F5F5;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+        
+        /* Top Banner - Trust Signals */
+        .top-banner {
+            background: var(--dark-brown);
+            color: var(--white);
+            padding: 0.75rem 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .top-banner-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .top-banner-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .top-banner-item i {
+            color: var(--gold);
+        }
+        
+        /* Header & Navigation */
+        .header {
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo {
+            height: 70px;
+            width: auto;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+            align-items: center;
+        }
+        
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+            font-size: 1rem;
+        }
+        
+        .nav-menu a:hover {
+            color: var(--primary-color);
+        }
+        
+        .nav-cta {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+        
+        .btn {
+            padding: 0.85rem 1.75rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1rem;
+        }
+        
+        .btn-primary {
+            background: var(--primary-color);
+            color: var(--white);
+            box-shadow: 0 4px 15px rgba(139, 69, 19, 0.2);
+        }
+        
+        .btn-primary:hover {
+            background: var(--dark-brown);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(139, 69, 19, 0.3);
+        }
+        
+        .btn-secondary {
+            background: var(--secondary-color);
+            color: var(--white);
+            box-shadow: 0 4px 15px rgba(210, 105, 30, 0.2);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--primary-color);
+            transform: translateY(-2px);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+        }
+        
+        .btn-outline:hover {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+        
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 700px;
+            background: linear-gradient(135deg, rgba(139, 69, 19, 0.95), rgba(62, 39, 35, 0.9)),
+                        url('https://bakeronline-paris.s3.eu-west-3.amazonaws.com/website-pages/766/assortiment-brood-en-banket-bovenaanzich-1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        
+        .hero-content {
+            max-width: 900px;
+            text-align: center;
+            color: var(--white);
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 215, 0, 0.2);
+            border: 2px solid var(--gold);
+            color: var(--gold);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+            opacity: 0.95;
+        }
+        
+        .hero-usps {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .hero-usp {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        
+        .hero-usp i {
+            color: var(--gold);
+            font-size: 1.2rem;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1.25rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2.5rem;
+        }
+        
+        .btn-large {
+            padding: 1.25rem 3rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+        
+        /* Trust Bar */
+        .trust-bar {
+            background: var(--white);
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        
+        .trust-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+        
+        .trust-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .trust-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--light-cream), var(--accent-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+        }
+        
+        .trust-item h3 {
+            font-size: 1.1rem;
+            color: var(--dark-brown);
+            margin: 0;
+        }
+        
+        .trust-item p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            margin: 0;
+        }
+        
+        /* Quick Order Section - CRO Focus */
+        .quick-order {
+            padding: 4rem 2rem;
+            background: var(--light-cream);
+            background-image: 
+                repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(139, 69, 19, 0.03) 35px, rgba(139, 69, 19, 0.03) 70px);
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-tag {
+            display: inline-block;
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .section-header h2 {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .section-header p {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .quick-order-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .quick-order-card {
+            background: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+        
+        .quick-order-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.18);
+        }
+        
+        .card-image {
+            height: 260px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card-image::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+        }
+        
+        .card-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: var(--success-green);
+            color: var(--white);
+            padding: 0.6rem 1.2rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+            z-index: 10;
+        }
+        
+        .card-badge.popular {
+            background: var(--gold);
+            color: var(--dark-brown);
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+        }
+        
+        .card-content {
+            padding: 2rem;
+        }
+        
+        .card-header {
+            margin-bottom: 1.5rem;
+        }
+        
+        .card-category {
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .card-content h3 {
+            font-size: 1.8rem;
+            margin: 0.5rem 0;
+            color: var(--dark-brown);
+        }
+        
+        .card-description {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+        
+        .card-features {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+        
+        .card-features li {
+            padding: 0.6rem 0;
+            color: var(--text-dark);
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .card-features li i {
+            color: var(--success-green);
+            font-size: 1.1rem;
+        }
+        
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1.5rem;
+            border-top: 2px solid var(--light-cream);
+        }
+        
+        .card-price {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+        
+        .card-price strong {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            display: block;
+            margin-top: 0.25rem;
+        }
+        
+        /* Popular Products */
+        .popular-products {
+            padding: 5rem 2rem;
+            background: var(--white);
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .product-card {
+            background: var(--white);
+            border: 2px solid var(--light-cream);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        
+        .product-card:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .product-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .product-tag {
+            position: absolute;
+            top: 0.75rem;
+            left: 0.75rem;
+            background: var(--white);
+            color: var(--primary-color);
+            padding: 0.4rem 0.9rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .product-content {
+            padding: 1.5rem;
+        }
+        
+        .product-content h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--dark-brown);
+        }
+        
+        .product-price {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+        
+        /* Delivery Info - Prominent CRO Section */
+        .delivery-info {
+            padding: 5rem 2rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .delivery-info::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+        }
+        
+        .delivery-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .delivery-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-top: 3rem;
+        }
+        
+        .delivery-text h2 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .delivery-text p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+        
+        .delivery-features {
+            display: grid;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .delivery-feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .delivery-feature i {
+            font-size: 2rem;
+            color: var(--gold);
+            margin-top: 0.25rem;
+        }
+        
+        .delivery-feature h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .delivery-feature p {
+            font-size: 1rem;
+            opacity: 0.9;
+            margin: 0;
+        }
+        
+        .delivery-zones {
+            background: rgba(255, 255, 255, 0.95);
+            color: var(--text-dark);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        
+        .delivery-zones h3 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .zone-list {
+            display: grid;
+            gap: 1rem;
+        }
+        
+        .zone-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            background: var(--light-cream);
+            border-radius: 10px;
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .zone-name {
+            font-weight: 600;
+            color: var(--dark-brown);
+        }
+        
+        .zone-days {
+            display: flex;
+            gap: 0.5rem;
+        }
+        
+        .day-badge {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 0.3rem 0.7rem;
+            border-radius: 5px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        
+        /* Testimonials - Social Proof */
+        .testimonials {
+            padding: 5rem 2rem;
+            background: var(--light-gray);
+            background-image: 
+                repeating-linear-gradient(0deg, transparent, transparent 50px, rgba(139, 69, 19, 0.02) 50px, rgba(139, 69, 19, 0.02) 100px);
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .testimonial-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            position: relative;
+        }
+        
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 1rem;
+            left: 1.5rem;
+            font-size: 5rem;
+            color: var(--light-cream);
+            font-family: 'Playfair Display', serif;
+            line-height: 1;
+        }
+        
+        .testimonial-rating {
+            color: var(--gold);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .testimonial-text {
+            font-size: 1.05rem;
+            color: var(--text-dark);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        
+        .author-info h4 {
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+            color: var(--dark-brown);
+        }
+        
+        .author-info p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin: 0;
+        }
+        
+        /* About Section */
+        .about {
+            padding: 5rem 2rem;
+            background: var(--white);
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+        
+        .about-image {
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            position: relative;
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        .about-badge {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        
+        .about-badge-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            line-height: 1;
+        }
+        
+        .about-badge-text {
+            font-size: 0.9rem;
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+        
+        .about-text h2 {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+        
+        .about-text p {
+            font-size: 1.15rem;
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+        
+        .about-highlights {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .highlight-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: var(--light-cream);
+            border-radius: 10px;
+        }
+        
+        .highlight-icon {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+        
+        .highlight-item h4 {
+            font-size: 1rem;
+            color: var(--dark-brown);
+            margin-bottom: 0.25rem;
+        }
+        
+        .highlight-item p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin: 0;
+        }
+        
+        /* Location Section */
+        .location {
+            padding: 5rem 2rem;
+            background: var(--light-cream);
+        }
+        
+        .location-wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--white);
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+        }
+        
+        .location-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        .location-info {
+            padding: 3rem;
+        }
+        
+        .location-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .location-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.8rem;
+        }
+        
+        .location-info h3 {
+            font-size: 2rem;
+            color: var(--dark-brown);
+        }
+        
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .info-item i {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            margin-top: 0.3rem;
+        }
+        
+        .info-item-content h4 {
+            font-size: 1rem;
+            color: var(--dark-brown);
+            margin-bottom: 0.5rem;
+        }
+        
+        .info-item-content p {
+            color: var(--text-light);
+            margin: 0;
+        }
+        
+        .opening-hours {
+            background: var(--light-cream);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+        }
+        
+        .opening-hours h4 {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark-brown);
+        }
+        
+        .hours-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid rgba(139, 69, 19, 0.1);
+        }
+        
+        .hours-row:last-child {
+            border-bottom: none;
+        }
+        
+        .hours-day {
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+        
+        .hours-time {
+            color: var(--text-light);
+        }
+        
+        .location-map {
+            background: var(--light-gray);
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        /* Instagram Feed */
+        .instagram-feed {
+            padding: 5rem 2rem;
+            background: var(--white);
+        }
+        
+        .instagram-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+        
+        .instagram-item {
+            position: relative;
+            padding-bottom: 100%;
+            overflow: hidden;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        
+        .instagram-item img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s;
+        }
+        
+        .instagram-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .instagram-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(139, 69, 19, 0.9), rgba(210, 105, 30, 0.9));
+            opacity: 0;
+            transition: opacity 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 2rem;
+        }
+        
+        .instagram-item:hover .instagram-overlay {
+            opacity: 1;
+        }
+        
+        /* Final CTA */
+        .final-cta {
+            padding: 5rem 2rem;
+            background: linear-gradient(135deg, var(--dark-brown), var(--primary-color));
+            color: var(--white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .final-cta::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            animation: pulse 15s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        .final-cta-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .final-cta h2 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .final-cta p {
+            font-size: 1.4rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.95;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-white {
+            background: var(--white);
+            color: var(--primary-color);
+        }
+        
+        .btn-white:hover {
+            background: var(--light-cream);
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--dark-brown);
+            color: var(--white);
+            padding: 4rem 2rem 2rem;
+        }
+        
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        .footer-section h4 {
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            line-height: 2;
+            display: block;
+            transition: color 0.3s;
+        }
+        
+        .footer-section a:hover {
+            color: var(--accent-color);
+        }
+        
+        .footer-logo {
+            height: 60px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .social-links a {
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            font-size: 1.2rem;
+        }
+        
+        .social-links a:hover {
+            background: var(--accent-color);
+            transform: translateY(-3px);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s ease-out;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .delivery-grid,
+            .about-content,
+            .location-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .mobile-toggle {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .hero-usps {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .section-header h2 {
+                font-size: 2rem;
+            }
+            
+            .final-cta h2 {
+                font-size: 2.5rem;
+            }
+            
+            .about-highlights {
+                grid-template-columns: 1fr;
+            }
+            
+            .trust-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .top-banner-content {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+        
+        @media (max-width: 640px) {
+            .hero {
+                min-height: 600px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-buttons,
+            .cta-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .btn-large {
+                width: 100%;
+            }
+            
+            .quick-order-grid,
+            .products-grid,
+            .testimonials-grid,
+            .instagram-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Trust Banner -->
+    <div class="top-banner">
+        <div class="top-banner-content">
+            <div class="top-banner-item">
+                <i class="fas fa-truck"></i>
+                <span>Gratis bezorging vanaf €30</span>
+            </div>
+            <div class="top-banner-item">
+                <i class="fas fa-clock"></i>
+                <span>Vandaag besteld, morgen in huis</span>
+            </div>
+            <div class="top-banner-item">
+                <i class="fas fa-award"></i>
+                <span>30+ jaar vakmanschap</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo-container">
+                <img src="https://bakeronline-paris.s3.eu-west-3.amazonaws.com/website-pages/766/de-korenaar-logo-zij-naamsindruk-diap-1.png" alt="Echte Bakker De Korenaar" class="logo">
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#assortiment">Assortiment</a></li>
+                <li><a href="#bezorging">Bezorging</a></li>
+                <li><a href="#over-ons">Over Ons</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            <div class="nav-cta">
+                <a href="tel:0512361262" class="btn btn-outline">
+                    <i class="fas fa-phone"></i> 0512 361 262
+                </a>
+                <a href="/nl-nl/echte-bakker-de-korenaar" class="btn btn-primary">
+                    <i class="fas fa-shopping-cart"></i> Bestel Nu
+                </a>
+            </div>
+            
+            <button class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-star"></i>
+                Surhuisterveen's Favoriete Bakker
+            </div>
+            <h1>Ambachtelijk Brood<br>& Banket</h1>
+            <p class="hero-subtitle">Dagvers gebakken met liefde en vakmanschap sinds 1990</p>
+            
+            <div class="hero-usps">
+                <div class="hero-usp">
+                    <i class="fas fa-check-circle"></i>
+                    <span>100% Ambachtelijk</span>
+                </div>
+                <div class="hero-usp">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Verse Ingrediënten</span>
+                </div>
+                <div class="hero-usp">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Thuisbezorgd</span>
+                </div>
+            </div>
+            
+            <div class="hero-buttons">
+                <a href="/nl-nl/echte-bakker-de-korenaar" class="btn btn-primary btn-large">
+                    <i class="fas fa-shopping-cart"></i> Bestel Online
+                </a>
+                <a href="tel:0512361262" class="btn btn-white btn-large">
+                    <i class="fas fa-phone"></i> Bel Direct
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="trust-container fade-in">
+            <div class="trust-item">
+                <div class="trust-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Kwaliteitsgarantie</h3>
+                <p>Niet goed? Geld terug</p>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <h3>Thuisbezorgd</h3>
+                <p>3x per week in uw regio</p>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h3>Verse Producten</h3>
+                <p>Dagelijks vers gebakken</p>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3>Met Liefde Gemaakt</h3>
+                <p>Echt ambachtelijk werk</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Order Section -->
+    <section class="quick-order" id="assortiment">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Ons Assortiment</span>
+                <h2>Wat Kunnen Wij Voor U Betekenen?</h2>
+                <p>Van dagelijks brood tot luxe taarten - alles ambachtelijk bereid</p>
+            </div>
+            
+            <div class="quick-order-grid">
+                <!-- Taarten & Gebak -->
+                <div class="quick-order-card fade-in">
+                    <div class="card-image" style="background-image: url('https://bakeronline-paris.s3.eu-west-3.amazonaws.com/website-pages/766/assortiment-brood-en-banket-bovenaanzich-1.jpg')">
+                        <span class="card-badge popular">Meest Populair</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <div class="card-category">Feestelijk</div>
+                            <h3>Taarten & Gebak</h3>
+                        </div>
+                        <p class="card-description">
+                            Van klassieke slagroomtaarten tot moderne creaties - elke taart is een kunstwerk. Perfect voor verjaardagen, bruiloften of gewoon om jezelf te verwennen.
+                        </p>
+                        <ul class="card-features">
+                            <li><i class="fas fa-check-circle"></i> Gepersonaliseerde taarten</li>
+                            <li><i class="fas fa-check-circle"></i> Bruidstaarten op maat</li>
+                            <li><i class="fas fa-check-circle"></i> Luxe gebakjes</li>
+                            <li><i class="fas fa-check-circle"></i> Glutenvrije opties</li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="card-price">
+                                Vanaf
+                                <strong>€15,95</strong>
+                            </div>
+                            <a href="/nl-nl/echte-bakker-de-korenaar" class="btn btn-primary">
+                                Bestellen <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Brood & Broodjes -->
+                <div class="quick-order-card fade-in">
+                    <div class="card-image" style="background-image: url('https://bakeronline-paris.s3.eu-west-3.amazonaws.com/website-pages/766/kracht-van-het-ambacht-2019-deeg-insnijd.jpg')">
+                        <span class="card-badge">Dagvers</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <div class="card-category">Ambachtelijk</div>
+                            <h3>Brood & Broodjes</h3>
+                        </div>
+                        <p class="card-description">
+                            Ons ambachtelijk brood wordt dagelijks vers gebakken met de beste ingrediënten. Van volkoren tot wit, van zacht tot krokant.
+                        </p>
+                        <ul class="card-features">
+                            <li><i class="fas fa-check-circle"></i> Desembrood</li>
+                            <li><i class="fas fa-check-circle"></i> Volkorenbrood</li>
+                            <li><i class="fas fa-check-circle"></i> Stokbroden</li>
+                            <li><i class="fas fa-check-circle"></i> Speciale broodjes</li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="card-price">
+                                Vanaf
+                                <strong>€2,95</strong>
+                            </div>
+                            <a href="/nl-nl/echte-bakker-de-korenaar" class="btn btn-primary">
+                                Bestellen <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Zakelijk -->
+                <div class="quick-order-card fade-in">
+                    <div class="card-image" style="background-image: url('https://bakeronline-paris.s3.eu-west-3.amazonaws.com/website-pages/766/assortiment-brood-en-banket-bovenaanzich-1.jpg')">
+                        <span class="card-badge">B2B</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <div class="card-category">Zakelijk</div>
+                            <h3>Catering & Arrangementen</h3>
+                        </div>
+                        <p class="card-description">
+                            Professionele catering voor vergaderingen, borrels en evenementen. Van broodjes lunch tot luxe hapjes - wij verzorgen het allemaal.
+                        </p>
+                        <ul class="card-features">
+                            <li><i class="fas fa-check-circle"></i> Lunchpakketten</li>
+                            <li><i class="fas fa-check-circle"></i> Borrelplanken</li>
+                            <li><i class="fas fa-check-circle"></i> Maandcontracten</li>
+                            <li><i class="fas fa-check-circle"></i> Gratis bezorging (vanaf 20 pers.)</li>
+                        </ul>
+                        <div class="card-footer">
+                            <div class="card-price">
+                                Vanaf
+                                <strong>€8,50 p.p.</strong>
+                            </div>
+                            <a href="/nl/contact" class="btn btn-primary">
+                                Offerte <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delivery Info -->
+    <section class="delivery-info" id="bezorging">
+        <div class="container delivery-content">
+            <div class="section-header fade-in">
+                <span class="section-tag" style="background: rgba(255,255,255,0.2);">Bezorging</span>
+                <h2 style="color: white;">Thuisbezorgd in Uw Regio</h2>
+                <p style="color: rgba(255,255,255,0.95);">Vers aan huis, wanneer het u uitkomt</p>
+            </div>
+            
+            <div class="delivery-grid">
+                <div class="delivery-text fade-in">
+                    <h2>Hoe Werkt Het?</h2>
+                    <p>
+                        Wij bezorgen 3x per week vers gebakken producten bij u thuis. Bestel gemakkelijk online voor 18:00 uur en wij leveren de volgende bezorgdag.
+                    </p>
+                    
+                    <div class="delivery-features">
+                        <div class="delivery-feature">
+                            <i class="fas fa-calendar-check"></i>
+                            <div>
+                                <h4>Vaste Bezorgdagen</h4>
+                                <p>Dinsdag, Donderdag & Zaterdag in uw regio</p>
+                            </div>
+                        </div>
+                        <div class="delivery-feature">
+                            <i class="fas fa-euro-sign"></i>
+                            <div>
+                                <h4>Gratis Bezorging</h4>
+                                <p>Bij bestellingen vanaf €30,- bezorgen wij gratis</p>
+                            </div>
+                        </div>
+                        <div class="delivery-feature">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Snelle Levering</h4>
+                                <p>Bestel voor 18:00u, geleverd op volgende bezorgdag</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="/nl-nl/echte-bakker-de-korenaar" class="btn btn-white btn-large">
+                        <i class="fas fa-shopping-cart"></i> Bestel Nu
+                    </a>
+                </div>
+                
+                <div class="delivery-zones fade-in">
+                    <h3><i class="fas fa-map-marked-alt"></i> Bezorggebieden</h3>
+                    <div class="zone-list">
+                        <div class="zone-item">
+                            <span class="zone-name">Surhuisterveen</span>
+                            <div class="zone-days">
+                                <span class="day-badge">Di</span>
+                                <span class="day-badge">Do</span>
+                                <span class="day-badge">Za</span>
+                            </div>
+                        </div>
+                        <div class="zone-item">
+                            <span class="zone-name">Surhuizum</span>
+                            <div class="zone-days">
+                                <span class="day-badge">Di</span>
+                                <span class="day-badge">Do</span>
+                                <span class="day-badge">Za</span>
+                            </div>
+                        </div>
+                        <div class="zone-item">
+                            <span class="zone-name">Roden</span>
+                            <div class="zone-days">
+                                <span class="day-badge">Di</span>
+                                <span class="day-badge">Do</span>
+                                <span class="day-badge">Za</span>
+                            </div>
+                        </div>
+                        <div class="zone-item">
+                            <span class="zone-name">Leek</span>
+                            <div class="zone-days">
+                                <span class="day-badge">Di</span>
+                                <span class="day-badge">Do</span>
+                                <span class="day-badge">Za</span>
+                            </div>
+                        </div>
+                        <div class="zone-item">
+                            <span class="zone-name">Peize</span>
+                            <div class="zone-days">
+                                <span class="day-badge">Di</span>
+                                <span class="day-badge">Do</span>
+                                <span class="day-badge">Za</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-light);">
+                        <i class="fas fa-info-circle"></i> Niet in de lijst? Neem contact op voor mogelijkheden!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Reviews</span>
+                <h2>Wat Onze Klanten Zeggen</h2>
+                <p>Uw tevredenheid is onze grootste compliment</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Heerlijk brood en altijd keurig op tijd bezorgd! De taart voor mijn verjaardag was een hit. Iedereen was onder de indruk van de kwaliteit en smaak."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MW</div>
+                        <div class="author-info">
+                            <h4>Marieke Willems</h4>
+                            <p>Surhuisterveen</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Wij bestellen wekelijks voor onze kantoorlunch. Perfect geregeld, heerlijke broodjes en altijd verse producten. Aanrader voor zakelijke catering!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JB</div>
+                        <div class="author-info">
+                            <h4>Jan Bakker</h4>
+                            <p>Roden</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "De Korenaar is echt een echte bakker! Je proeft gewoon dat alles met ambacht en liefde wordt gemaakt. Hun desembrood is het beste dat ik ooit heb gegeten."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SD</div>
+                        <div class="author-info">
+                            <h4>Sophie de Vries</h4>
+                            <p>Leek</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="over-ons">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image fade-in">
+                    <img src="https://bakeronline-paris.s3.eu-west-3.amazonaws.com/website-pages/766/kracht-van-het-ambacht-2019-deeg-insnijd.jpg" alt="Ambachtelijk Bakken">
+                    <div class="about-badge">
+                        <div class="about-badge-number">30+</div>
+                        <div class="about-badge-text">Jaar Ervaring</div>
+                    </div>
+                </div>
+                <div class="about-text fade-in">
+                    <span class="section-tag">Over Ons</span>
+                    <h2>Passie Voor Het Bakkersvak</h2>
+                    <p>
+                        De Echte Bakker De Korenaar staat sinds 1990 voor ambachtelijke kwaliteit en eerlijke producten. Ons familiebedrijf combineert traditionele recepten met moderne wensen.
+                    </p>
+                    <p>
+                        Elke dag staan wij vroeg op om voor u het lekkerste brood, koek en banket te bakken. Met verse ingrediënten, veel liefde en vakmanschap. Dat proef je in elk product.
+                    </p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-users highlight-icon"></i>
+                            <div>
+                                <h4>Familiebedrijf</h4>
+                                <p>3 generaties bakkers</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-certificate highlight-icon"></i>
+                            <div>
+                                <h4>Echte Bakker</h4>
+                                <p>Officieel erkend</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-seedling highlight-icon"></i>
+                            <div>
+                                <h4>Lokale Producten</h4>
+                                <p>Verse ingrediënten</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-hand-holding-heart highlight-icon"></i>
+                            <div>
+                                <h4>Met Zorg</h4>
+                                <p>Handgemaakt</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn btn-primary btn-large">
+                        <i class="fas fa-envelope"></i> Neem Contact Op
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location -->
+    <section class="location" id="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Bezoek Ons</span>
+                <h2>Kom Langs in Surhuisterveen</h2>
+                <p>U bent altijd welkom in onze winkel</p>
+            </div>
+            
+            <div class="location-wrapper fade-in">
+                <div class="location-content">
+                    <div class="location-info">
+                        <div class="location-header">
+                            <div class="location-icon">
+                                <i class="fas fa-store"></i>
+                            </div>
+                            <h3>Surhuisterveen</h3>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info-item-content">
+                                <h4>Adres</h4>
+                                <p>Gedempte Vaart 17<br>9231 AS Surhuisterveen</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div class="info-item-content">
+                                <h4>Telefoon</h4>
+                                <p><a href="tel:0512361262" style="color: var(--primary-color); font-weight: 600;">0512 361 262</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info-item-content">
+                                <h4>Email</h4>
+                                <p><a href="mailto:info@bakkerijdekorenaar.nl" style="color: var(--primary-color); font-weight: 600;">info@bakkerijdekorenaar.nl</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="opening-hours">
+                            <h4><i class="far fa-clock"></i> Openingstijden</h4>
+                            <div class="hours-row">
+                                <span class="hours-day">Maandag</span>
+                                <span class="hours-time">07:00 - 17:00</span>
+                            </div>
+                            <div class="hours-row">
+                                <span class="hours-day">Dinsdag - Vrijdag</span>
+                                <span class="hours-time">07:00 - 18:00</span>
+                            </div>
+                            <div class="hours-row">
+                                <span class="hours-day">Zaterdag</span>
+                                <span class="hours-time">07:00 - 17:00</span>
+                            </div>
+                            <div class="hours-row">
+                                <span class="hours-day">Zondag</span>
+                                <span class="hours-time" style="font-weight: 600; color: var(--text-dark);">Gesloten</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="location-map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2395.5!2d6.1827!3d53.1827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTPCsDEwJzU3LjciTiA2wrAxMCc1Ny42IkU!5e0!3m2!1snl!2snl!4v1234567890"
+                            width="100%"
+                            height="100%"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed -->
+    <section class="instagram-feed">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">Social Media</span>
+                <h2>Volg Ons Op Instagram</h2>
+                <p>@bakkerijdekorenaar - Dagelijks de lekkerste creaties</p>
+            </div>
+            
+            <div class="instagram-grid">
+                <div class="instagram-item fade-in">
+                    <img src="https://bakeronline-paris.s3.eu-west-3.amazonaws.com/website-pages/766/assortiment-brood-en-banket-bovenaanzich-1.jpg" alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-item fade-in">
+                    <img src="https://bakeronline-paris.s3.eu-west-3.amazonaws.com/website-pages/766/kracht-van-het-ambacht-2019-deeg-insnijd.jpg" alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-item fade-in">
+                    <img src="https://bakeronline-paris.s3.eu-west-3.amazonaws.com/website-pages/766/assortiment-brood-en-banket-bovenaanzich-1.jpg" alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-item fade-in">
+                    <img src="https://bakeronline-paris.s3.eu-west-3.amazonaws.com/website-pages/766/kracht-van-het-ambacht-2019-deeg-insnijd.jpg" alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="https://www.instagram.com/bakkerijdekorenaar/" target="_blank" class="btn btn-primary btn-large">
+                    <i class="fab fa-instagram"></i> Volg Ons Op Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="final-cta-content">
+            <h2>Klaar Om Te Bestellen?</h2>
+            <p>Ervaar zelf de kwaliteit van echt ambachtelijk bakwerk</p>
+            <div class="cta-buttons">
+                <a href="/nl-nl/echte-bakker-de-korenaar" class="btn btn-white btn-large">
+                    <i class="fas fa-shopping-cart"></i> Bestel Online
+                </a>
+                <a href="tel:0512361262" class="btn btn-outline btn-large" style="border-color: white; color: white;">
+                    <i class="fas fa-phone"></i> Of Bel 0512 361 262
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="https://bakeronline-paris.s3.eu-west-3.amazonaws.com/website-pages/766/de-korenaar-logo-zij-naamsindruk-diap-1.png" alt="De Korenaar" class="footer-logo">
+                <p>Ambachtelijk brood, koek en banket sinds 1990. Met passie en vakmanschap elke dag vers voor u gebakken.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/BakkerijdeKorenaar/" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/bakkerijdekorenaar/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Navigatie</h4>
+                <a href="#home">Home</a>
+                <a href="#assortiment">Assortiment</a>
+                <a href="#bezorging">Bezorging</a>
+                <a href="#over-ons">Over Ons</a>
+                <a href="#contact">Contact</a>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Webshop</h4>
+                <a href="/nl-nl/echte-bakker-de-korenaar">Bestel Online</a>
+                <a href="/nl/bezorginformatie">Bezorginformatie</a>
+                <a href="/nl/contact">Contact</a>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p><strong>Gedempte Vaart 17</strong><br>9231 AS Surhuisterveen</p>
+                <p><i class="fas fa-phone"></i> <a href="tel:0512361262">0512 361 262</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:info@bakkerijdekorenaar.nl">info@bakkerijdekorenaar.nl</a></p>
+                <p style="margin-top: 1rem; font-size: 0.9rem;">KvK: 78515629</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 Echte Bakker De Korenaar. Alle rechten voorbehouden. | 
+                <a href="/nl-nl/policy/privacy" style="color: rgba(255,255,255,0.6);">Privacy</a> | 
+                <a href="/nl-nl/policy/terms" style="color: rgba(255,255,255,0.6);">Voorwaarden</a> | 
+                <a href="/nl-nl/policy/cookie" style="color: rgba(255,255,255,0.6);">Cookies</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(element => {
+            observer.observe(element);
+        });
+
+        // Mobile menu toggle
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        if (mobileToggle && navMenu) {
+            mobileToggle.addEventListener('click', () => {
+                navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+                navMenu.style.flexDirection = 'column';
+                navMenu.style.position = 'absolute';
+                navMenu.style.top = '100%';
+                navMenu.style.left = '0';
+                navMenu.style.right = '0';
+                navMenu.style.background = 'white';
+                navMenu.style.padding = '2rem';
+                navMenu.style.boxShadow = '0 5px 20px rgba(0,0,0,0.1)';
+            });
+        }
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.boxShadow = '0 5px 30px rgba(0,0,0,0.15)';
+            } else {
+                header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            }
+        });
+    </script>
+</body>
+</html>
