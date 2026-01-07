@@ -10,14 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="shared.css">
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         :root {
             --primary: #8B4513;
             --primary-dark: #6B3410;
@@ -81,68 +76,6 @@
             max-width: var(--max-width);
             margin: 0 auto;
             padding: 0 var(--space-6);
-        }
-
-        .top-bar {
-            background: var(--primary-dark);
-            color: var(--white);
-            font-size: var(--text-sm);
-        }
-
-        .top-bar-content {
-            display: flex;
-            justify-content: center;
-            gap: var(--space-8);
-            padding: var(--space-3) var(--space-4);
-            flex-wrap: wrap;
-        }
-
-        .top-bar-item {
-            display: flex;
-            align-items: center;
-            gap: var(--space-2);
-        }
-
-        .top-bar-item i {
-            color: #FFD700;
-        }
-
-        header {
-            background: var(--white);
-            border-bottom: 1px solid var(--gray-200);
-            position: sticky;
-            top: 0;
-            z-index: 50;
-        }
-
-        .nav {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: var(--space-6);
-            padding: var(--space-4) 0;
-        }
-
-        .logo {
-            height: 48px;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: var(--space-6);
-            font-weight: 500;
-            font-size: var(--text-sm);
-            color: var(--gray-700);
-        }
-
-        .nav-links a:hover {
-            color: var(--primary);
-        }
-
-        .nav-actions {
-            display: flex;
-            gap: var(--space-3);
-            align-items: center;
         }
 
         .btn {
@@ -505,11 +438,11 @@
         <div class="top-bar-content">
             <div class="top-bar-item">
                 <i class="fas fa-truck"></i>
-                <span>Vandaag besteld, morgen vers in huis</span>
+                <span>Gratis bezorging vanaf €30</span>
             </div>
             <div class="top-bar-item">
-                <i class="fas fa-location-dot"></i>
-                <span>Surhuisterveen • Gedempte Vaart 17</span>
+                <i class="fas fa-clock"></i>
+                <span>Bestel voor 18:00u, morgen geleverd</span>
             </div>
             <div class="top-bar-item">
                 <i class="fas fa-phone"></i>
@@ -518,20 +451,32 @@
         </div>
     </div>
 
-    <header>
-        <div class="container nav">
+    <header class="header">
+        <div class="header-content">
             <a href="index.html" aria-label="Ga naar de homepage">
                 <img src="https://bakeronline-paris.s3.eu-west-3.amazonaws.com/website-pages/766/de-korenaar-logo-zij-naamsindruk-diap-1.png" alt="De Korenaar" class="logo">
             </a>
-            <nav class="nav-links">
-                <a href="#assortiment">Assortiment</a>
-                <a href="#werkwijze">Hoe bestellen</a>
-                <a href="#reviews">Reviews</a>
-                <a href="#contact">Contact</a>
+            <nav class="header-nav">
+                <a href="index.html">Home</a>
+                <a href="assortiment.html">Assortiment</a>
+                <a href="brood.html">Brood</a>
+                <a href="banket.html">Banket</a>
+                <a href="taarten.html">Taarten</a>
+                <a href="belegde-broodjes.html">Belegde broodjes</a>
+                <a href="bezorging.html">Bezorging</a>
+                <a href="over-ons.html">Over ons</a>
+                <a href="contact.html">Contact</a>
             </nav>
-            <div class="nav-actions">
-                <a class="btn btn-secondary" href="tel:0512361262"><i class="fas fa-phone"></i>Bel ons</a>
-                <a class="btn btn-primary" href="bestel.html"><i class="fas fa-bag-shopping"></i>Bestel direct</a>
+            <div class="header-actions">
+                <a href="tel:0512361262" class="header-btn btn-secondary">
+                    <i class="fas fa-phone"></i>
+                    <span>Bel ons</span>
+                </a>
+                <button class="header-btn btn-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Winkelwagen</span>
+                    <span class="cart-count">0</span>
+                </button>
             </div>
         </div>
     </header>
@@ -733,6 +678,8 @@
                 <div>
                     <h4>Echte Bakker De Korenaar</h4>
                     <a href="bestel.html">Online bestellen</a>
+                    <a href="assortiment.html">Assortiment</a>
+                    <a href="over-ons.html">Over ons</a>
                     <a href="tel:0512361262">0512 361 262</a>
                     <a href="mailto:info@bakkerijdekorenaar.nl">info@bakkerijdekorenaar.nl</a>
                 </div>
@@ -744,9 +691,9 @@
                 </div>
                 <div>
                     <h4>Service</h4>
-                    <a href="#">Bezorginformatie</a>
-                    <a href="#">Allergenen & voeding</a>
-                    <a href="#">Zakelijke bestellingen</a>
+                    <a href="bezorging.html">Bezorginformatie</a>
+                    <a href="allergenen.html">Allergenen & voeding</a>
+                    <a href="zakelijk.html">Zakelijke bestellingen</a>
                 </div>
                 <div>
                     <h4>Volg ons</h4>

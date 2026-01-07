@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Over ons | Echte Bakker De Korenaar</title>
+    <meta name="description" content="Lees het verhaal van Echte Bakker De Korenaar, onze ambachtelijke werkwijze en het team in Surhuisterveen.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="shared.css">
+
+    <style>
+        .story-grid {
+            display: grid;
+            gap: var(--space-8);
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        }
+
+        .story-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: var(--space-6);
+            box-shadow: var(--shadow);
+            display: grid;
+            gap: var(--space-3);
+        }
+
+        .story-card i {
+            color: var(--accent);
+            font-size: var(--text-xl);
+        }
+
+        .timeline-grid {
+            display: grid;
+            gap: var(--space-4);
+        }
+
+        .timeline-entry {
+            display: flex;
+            gap: var(--space-3);
+            align-items: flex-start;
+            padding: var(--space-4);
+            background: var(--gray-100);
+            border-radius: var(--radius);
+        }
+
+        .timeline-entry span {
+            font-weight: 600;
+            color: var(--primary);
+            min-width: 72px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <div class="top-bar-item">
+                <i class="fas fa-truck"></i>
+                <span>Gratis bezorging vanaf €30</span>
+            </div>
+            <div class="top-bar-item">
+                <i class="fas fa-clock"></i>
+                <span>Bestel voor 18:00u, morgen geleverd</span>
+            </div>
+            <div class="top-bar-item">
+                <i class="fas fa-phone"></i>
+                <span>0512 361 262</span>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header-content">
+            <a href="index.html" aria-label="Ga naar de homepage">
+                <img src="https://bakeronline-paris.s3.eu-west-3.amazonaws.com/website-pages/766/de-korenaar-logo-zij-naamsindruk-diap-1.png" alt="De Korenaar" class="logo">
+            </a>
+
+            <nav class="header-nav">
+                <a href="index.html">Home</a>
+                <a href="assortiment.html">Assortiment</a>
+                <a href="brood.html">Brood</a>
+                <a href="banket.html">Banket</a>
+                <a href="taarten.html">Taarten</a>
+                <a href="belegde-broodjes.html">Belegde broodjes</a>
+                <a href="bezorging.html">Bezorging</a>
+                <a href="over-ons.html">Over ons</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="tel:0512361262" class="header-btn btn-secondary">
+                    <i class="fas fa-phone"></i>
+                    <span>Bel ons</span>
+                </a>
+                <button class="header-btn btn-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Winkelwagen</span>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container page-hero-content">
+                <h1>Over De Korenaar</h1>
+                <p>Al generaties lang bakken wij met aandacht voor kwaliteit, smaak en persoonlijke service.</p>
+                <div class="hero-actions">
+                    <a class="header-btn btn-cart" href="bestel.html"><i class="fas fa-bag-shopping"></i>Bestel online</a>
+                    <a class="header-btn btn-secondary" href="contact.html"><i class="fas fa-user-group"></i>Maak kennis</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="bakkerij">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Onze bakkerij in Surhuisterveen</h2>
+                    <p>Een vertrouwd familiebedrijf met een passie voor ambacht.</p>
+                </div>
+                <div class="story-grid">
+                    <div class="story-card">
+                        <i class="fas fa-people-group"></i>
+                        <h3>Familiewaarden</h3>
+                        <p>We kennen onze klanten bij naam en luisteren naar hun wensen.</p>
+                    </div>
+                    <div class="story-card">
+                        <i class="fas fa-bread-slice"></i>
+                        <h3>Dagvers aanbod</h3>
+                        <p>Elke ochtend bakken we brood, gebak en broodjes vers op bestelling.</p>
+                    </div>
+                    <div class="story-card">
+                        <i class="fas fa-seedling"></i>
+                        <h3>Lokale leveranciers</h3>
+                        <p>We werken met regionale molens en boeren voor topkwaliteit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="ambacht">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Ambachtelijk vakmanschap</h2>
+                    <p>Traditionele technieken gecombineerd met moderne smaken.</p>
+                </div>
+                <div class="timeline-grid">
+                    <div class="timeline-entry">
+                        <span>05:00</span>
+                        <div>
+                            <h3>Deeg bereiden</h3>
+                            <p>Onze bakkers starten met het mengen van het deeg en desem.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-entry">
+                        <span>08:00</span>
+                        <div>
+                            <h3>Ovenwarm brood</h3>
+                            <p>De eerste broden komen uit de oven voor de ochtendspits.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-entry">
+                        <span>12:00</span>
+                        <div>
+                            <h3>Vers banket</h3>
+                            <p>Gebak, koek en taarten worden afgewerkt en klaar gezet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Assortiment</h4>
+                    <a href="brood.html">Brood</a>
+                    <a href="banket.html">Banket</a>
+                    <a href="taarten.html">Taarten</a>
+                    <a href="belegde-broodjes.html">Belegde broodjes</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Service</h4>
+                    <a href="bezorging.html">Bezorginformatie</a>
+                    <a href="allergenen.html">Allergenen</a>
+                    <a href="zakelijk.html">Zakelijke bestellingen</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Over De Korenaar</h4>
+                    <a href="over-ons.html">Over ons</a>
+                    <a href="#bakkerij">Onze bakkerij</a>
+                    <a href="#ambacht">Ambacht</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <a href="contact.html">Contactpagina</a>
+                    <a href="tel:0512361262">0512 361 262</a>
+                    <a href="mailto:info@bakkerijdekorenaar.nl">info@bakkerijdekorenaar.nl</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Echte Bakker De Korenaar. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

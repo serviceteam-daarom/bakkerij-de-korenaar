@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zakelijke bestellingen | Echte Bakker De Korenaar</title>
+    <meta name="description" content="Zakelijke bestellingen en catering van Echte Bakker De Korenaar. Ontbijt, lunch en traktaties voor teams.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="shared.css">
+
+    <style>
+        .business-grid {
+            display: grid;
+            gap: var(--space-6);
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        }
+
+        .business-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: var(--space-6);
+            box-shadow: var(--shadow);
+            display: grid;
+            gap: var(--space-3);
+        }
+
+        .business-card i {
+            color: var(--accent);
+            font-size: var(--text-xl);
+        }
+
+        .cta-panel {
+            background: var(--primary-dark);
+            color: var(--white);
+            border-radius: var(--radius-lg);
+            padding: var(--space-8);
+            display: grid;
+            gap: var(--space-4);
+        }
+
+        .cta-panel p {
+            color: var(--gray-200);
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <div class="top-bar-item">
+                <i class="fas fa-truck"></i>
+                <span>Gratis bezorging vanaf €30</span>
+            </div>
+            <div class="top-bar-item">
+                <i class="fas fa-clock"></i>
+                <span>Bestel voor 18:00u, morgen geleverd</span>
+            </div>
+            <div class="top-bar-item">
+                <i class="fas fa-phone"></i>
+                <span>0512 361 262</span>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header-content">
+            <a href="index.html" aria-label="Ga naar de homepage">
+                <img src="https://bakeronline-paris.s3.eu-west-3.amazonaws.com/website-pages/766/de-korenaar-logo-zij-naamsindruk-diap-1.png" alt="De Korenaar" class="logo">
+            </a>
+
+            <nav class="header-nav">
+                <a href="index.html">Home</a>
+                <a href="assortiment.html">Assortiment</a>
+                <a href="brood.html">Brood</a>
+                <a href="banket.html">Banket</a>
+                <a href="taarten.html">Taarten</a>
+                <a href="belegde-broodjes.html">Belegde broodjes</a>
+                <a href="bezorging.html">Bezorging</a>
+                <a href="over-ons.html">Over ons</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="tel:0512361262" class="header-btn btn-secondary">
+                    <i class="fas fa-phone"></i>
+                    <span>Bel ons</span>
+                </a>
+                <button class="header-btn btn-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Winkelwagen</span>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container page-hero-content">
+                <h1>Zakelijk bestellen zonder gedoe</h1>
+                <p>Maak elke meeting of viering compleet met vers brood, banket en lunchpakketten.</p>
+                <div class="hero-actions">
+                    <a class="header-btn btn-cart" href="bestel.html"><i class="fas fa-bag-shopping"></i>Start zakelijke bestelling</a>
+                    <a class="header-btn btn-secondary" href="contact.html"><i class="fas fa-phone"></i>Offerte aanvragen</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Wat we leveren</h2>
+                    <p>Volledige catering of losse items, afgestemd op jouw team.</p>
+                </div>
+                <div class="business-grid">
+                    <div class="business-card">
+                        <i class="fas fa-mug-hot"></i>
+                        <h3>Ontbijtboxen</h3>
+                        <p>Croissants, beleg en vers brood voor vroege meetings.</p>
+                    </div>
+                    <div class="business-card">
+                        <i class="fas fa-bread-slice"></i>
+                        <h3>Lunchpakketten</h3>
+                        <p>Belegde broodjes, salades en sappen voor teams.</p>
+                    </div>
+                    <div class="business-card">
+                        <i class="fas fa-cake-candles"></i>
+                        <h3>Traktaties</h3>
+                        <p>Gebak en taart voor jubilea of verjaardagen op kantoor.</p>
+                    </div>
+                    <div class="business-card">
+                        <i class="fas fa-truck"></i>
+                        <h3>Bezorgservice</h3>
+                        <p>Levering op afspraak, inclusief facturatie voor bedrijven.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="cta-panel">
+                    <h2>Meer weten over zakelijke mogelijkheden?</h2>
+                    <p>Neem contact op voor een persoonlijk voorstel en actuele prijslijsten.</p>
+                    <div class="hero-actions">
+                        <a class="header-btn btn-cart" href="tel:0512361262"><i class="fas fa-phone"></i>Bel ons</a>
+                        <a class="header-btn btn-secondary" href="mailto:info@bakkerijdekorenaar.nl"><i class="fas fa-envelope"></i>Mail ons</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Assortiment</h4>
+                    <a href="brood.html">Brood</a>
+                    <a href="banket.html">Banket</a>
+                    <a href="taarten.html">Taarten</a>
+                    <a href="belegde-broodjes.html">Belegde broodjes</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Service</h4>
+                    <a href="bezorging.html">Bezorginformatie</a>
+                    <a href="allergenen.html">Allergenen</a>
+                    <a href="zakelijk.html">Zakelijke bestellingen</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Over De Korenaar</h4>
+                    <a href="over-ons.html">Over ons</a>
+                    <a href="over-ons.html#bakkerij">Onze bakkerij</a>
+                    <a href="over-ons.html#ambacht">Ambacht</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <a href="contact.html">Contactpagina</a>
+                    <a href="tel:0512361262">0512 361 262</a>
+                    <a href="mailto:info@bakkerijdekorenaar.nl">info@bakkerijdekorenaar.nl</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Echte Bakker De Korenaar. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
