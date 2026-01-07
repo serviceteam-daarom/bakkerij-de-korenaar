@@ -1,0 +1,5 @@
+# GitHub Pages / Jekyll config
+title: Echte Bakker De Korenaar
+description: Bestel online bij Echte Bakker De Korenaar. Verse broodjes, brood en banket uit Surhuisterveen.
+# No theme needed; we serve a standalone index.html
+theme: null
