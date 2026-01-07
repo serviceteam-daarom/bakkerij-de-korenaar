@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assortiment | Echte Bakker De Korenaar</title>
+    <meta name="description" content="Ontdek het assortiment van Echte Bakker De Korenaar: vers brood, banket, taarten en belegde broodjes uit Surhuisterveen.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="shared.css">
+
+    <style>
+        .category-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            display: grid;
+        }
+
+        .category-card img {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .category-card-content {
+            padding: var(--space-6);
+            display: grid;
+            gap: var(--space-3);
+        }
+
+        .category-card-content p {
+            color: var(--gray-600);
+        }
+
+        .category-card-content a {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: var(--text-sm);
+        }
+
+        .assortiment-highlight {
+            display: grid;
+            gap: var(--space-6);
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        }
+
+        .highlight-item {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: var(--space-5);
+            border: 1px solid var(--gray-200);
+            display: grid;
+            gap: var(--space-3);
+        }
+
+        .highlight-item i {
+            color: var(--accent);
+            font-size: var(--text-xl);
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <div class="top-bar-item">
+                <i class="fas fa-truck"></i>
+                <span>Gratis bezorging vanaf €30</span>
+            </div>
+            <div class="top-bar-item">
+                <i class="fas fa-clock"></i>
+                <span>Bestel voor 18:00u, morgen geleverd</span>
+            </div>
+            <div class="top-bar-item">
+                <i class="fas fa-phone"></i>
+                <span>0512 361 262</span>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header-content">
+            <a href="index.html" aria-label="Ga naar de homepage">
+                <img src="https://bakeronline-paris.s3.eu-west-3.amazonaws.com/website-pages/766/de-korenaar-logo-zij-naamsindruk-diap-1.png" alt="De Korenaar" class="logo">
+            </a>
+
+            <nav class="header-nav">
+                <a href="index.html">Home</a>
+                <a href="assortiment.html">Assortiment</a>
+                <a href="brood.html">Brood</a>
+                <a href="banket.html">Banket</a>
+                <a href="taarten.html">Taarten</a>
+                <a href="belegde-broodjes.html">Belegde broodjes</a>
+                <a href="bezorging.html">Bezorging</a>
+                <a href="over-ons.html">Over ons</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="tel:0512361262" class="header-btn btn-secondary">
+                    <i class="fas fa-phone"></i>
+                    <span>Bel ons</span>
+                </a>
+                <button class="header-btn btn-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Winkelwagen</span>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container page-hero-content">
+                <h1>Het volledige assortiment van De Korenaar</h1>
+                <p>Van ambachtelijk brood tot feestelijke taarten. Kies jouw favorieten of laat ons iets bijzonders voor je maken.</p>
+                <div class="hero-actions">
+                    <a class="header-btn btn-cart" href="bestel.html"><i class="fas fa-bag-shopping"></i>Bestel direct</a>
+                    <a class="header-btn btn-secondary" href="contact.html"><i class="fas fa-comment"></i>Vraag advies</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Populaire categorieën</h2>
+                    <p>Ons assortiment is dagvers en afgestemd op het seizoen.</p>
+                </div>
+                <div class="card-grid">
+                    <article class="category-card">
+                        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1200&h=800&fit=crop" alt="Brood assortiment">
+                        <div class="category-card-content">
+                            <h3>Brood & desem</h3>
+                            <p>Meergranen, volkoren, desem en glutenvrije varianten.</p>
+                            <a href="brood.html">Bekijk brood &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="category-card">
+                        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=1200&h=800&fit=crop" alt="Banket assortiment">
+                        <div class="category-card-content">
+                            <h3>Banket & lekkernijen</h3>
+                            <p>Koek, gebak en seizoensspecials met roomboter.</p>
+                            <a href="banket.html">Bekijk banket &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="category-card">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=1200&h=800&fit=crop" alt="Taarten assortiment">
+                        <div class="category-card-content">
+                            <h3>Taarten op maat</h3>
+                            <p>Van klassieke slagroomtaarten tot luxe chocolade.</p>
+                            <a href="taarten.html">Bekijk taarten &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="category-card">
+                        <img src="https://images.unsplash.com/photo-1509722747041-616f39b57569?w=1200&h=800&fit=crop" alt="Belegde broodjes">
+                        <div class="category-card-content">
+                            <h3>Belegde broodjes</h3>
+                            <p>Vers belegd met kaas, vleeswaren of vega opties.</p>
+                            <a href="belegde-broodjes.html">Bekijk broodjes &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Seizoensfavorieten</h2>
+                    <p>Altijd iets nieuws in de vitrine.</p>
+                </div>
+                <div class="assortiment-highlight">
+                    <div class="highlight-item">
+                        <i class="fas fa-cookie-bite"></i>
+                        <h3>Herfstbanket</h3>
+                        <p>Kruidige appeltaarten, notenkoeken en kaneelbroodjes.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-bread-slice"></i>
+                        <h3>Brood van de week</h3>
+                        <p>Elke week een wisselend brood, vanaf €3,25.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-gift"></i>
+                        <h3>Traktaties op maat</h3>
+                        <p>Gepersonaliseerd gebak voor verjaardagen en events.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Assortiment</h4>
+                    <a href="brood.html">Brood</a>
+                    <a href="banket.html">Banket</a>
+                    <a href="taarten.html">Taarten</a>
+                    <a href="belegde-broodjes.html">Belegde broodjes</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Service</h4>
+                    <a href="bezorging.html">Bezorginformatie</a>
+                    <a href="allergenen.html">Allergenen</a>
+                    <a href="zakelijk.html">Zakelijke bestellingen</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Over De Korenaar</h4>
+                    <a href="over-ons.html">Over ons</a>
+                    <a href="over-ons.html#bakkerij">Onze bakkerij</a>
+                    <a href="over-ons.html#ambacht">Ambacht</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <a href="contact.html">Contactpagina</a>
+                    <a href="tel:0512361262">0512 361 262</a>
+                    <a href="mailto:info@bakkerijdekorenaar.nl">info@bakkerijdekorenaar.nl</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Echte Bakker De Korenaar. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
