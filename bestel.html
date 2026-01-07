@@ -996,15 +996,35 @@
             </a>
 
             <nav class="header-nav">
-                <a href="index.html">Home</a>
-                <a href="assortiment.html">Assortiment</a>
-                <a href="brood.html">Brood</a>
-                <a href="banket.html">Banket</a>
-                <a href="taarten.html">Taarten</a>
-                <a href="belegde-broodjes.html">Belegde broodjes</a>
-                <a href="bezorging.html">Bezorging</a>
-                <a href="over-ons.html">Over ons</a>
-                <a href="contact.html">Contact</a>
+                <div class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </div>
+                <div class="nav-item has-dropdown">
+                    <a class="nav-link" href="assortiment.html">Assortiment <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="brood.html">Brood</a>
+                        <a href="banket.html">Banket</a>
+                        <a href="taarten.html">Taarten</a>
+                        <a href="belegde-broodjes.html">Belegde broodjes</a>
+                    </div>
+                </div>
+                <div class="nav-item has-dropdown">
+                    <a class="nav-link" href="bestel.html">Bestellen <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="bezorging.html">Bezorging</a>
+                    </div>
+                </div>
+                <div class="nav-item has-dropdown">
+                    <a class="nav-link" href="over-ons.html">Over ons <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="over-ons.html">Onze bakkerij</a>
+                        <a href="zakelijk.html">Zakelijk</a>
+                        <a href="allergenen.html">Allergenen</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </div>
             </nav>
 
             <div class="header-actions">
@@ -1198,36 +1218,36 @@
         // Products Database
         const products = [
             // Broodjes
-            { id: 1, name: 'Broodje kroket', price: 3.45, category: 'broodjes', description: 'Heerlijk pistolet met krokante kroket', image: 'https://images.unsplash.com/photo-1619740455993-9e4dc00e8e47?w=400&h=400&fit=crop' },
-            { id: 2, name: 'Broodje kaas', price: 2.95, category: 'broodjes', description: 'Vers pistolet met jonge kaas', image: 'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=400&h=400&fit=crop' },
-            { id: 3, name: 'Broodje gezond', price: 3.75, category: 'broodjes', description: 'Volkoren broodje met groenten en kaas', image: 'https://images.unsplash.com/photo-1509722747041-616f39b57569?w=400&h=400&fit=crop' },
-            { id: 4, name: 'Broodje ham', price: 3.25, category: 'broodjes', description: 'Met verse boterham en kwaliteitsham', image: 'https://images.unsplash.com/photo-1553909489-cd47e0907980?w=400&h=400&fit=crop' },
-            { id: 5, name: 'Broodje filet americain', price: 3.45, category: 'broodjes', description: 'Vers pistolet met filet americain', image: 'https://images.unsplash.com/photo-1619096252214-ef06c45683e3?w=400&h=400&fit=crop' },
-            { id: 6, name: 'Broodje bal', price: 3.75, category: 'broodjes', description: 'Met verse gehaktbal en mosterd', image: 'https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=400&h=400&fit=crop' },
-            { id: 7, name: 'Broodje carpaccio', price: 4.25, category: 'broodjes', description: 'Luxe broodje met carpaccio', image: 'https://images.unsplash.com/photo-1509722747041-616f39b57569?w=400&h=400&fit=crop' },
-            { id: 8, name: 'Broodje tonijn', price: 3.95, category: 'broodjes', description: 'Heerlijke tonijnsalade op vers brood', image: 'https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=400&h=400&fit=crop' },
+            { id: 1, name: 'Broodje kroket', price: 3.45, category: 'broodjes', description: 'Heerlijk pistolet met krokante kroket', image: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Bakkerij_De_Korenaar._Surhuisterveen.JPG' },
+            { id: 2, name: 'Broodje kaas', price: 2.95, category: 'broodjes', description: 'Vers pistolet met jonge kaas', image: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Bakkerij_De_Korenaar._Surhuisterveen.JPG' },
+            { id: 3, name: 'Broodje gezond', price: 3.75, category: 'broodjes', description: 'Volkoren broodje met groenten en kaas', image: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Bakkerij_De_Korenaar._Surhuisterveen.JPG' },
+            { id: 4, name: 'Broodje ham', price: 3.25, category: 'broodjes', description: 'Met verse boterham en kwaliteitsham', image: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Bakkerij_De_Korenaar._Surhuisterveen.JPG' },
+            { id: 5, name: 'Broodje filet americain', price: 3.45, category: 'broodjes', description: 'Vers pistolet met filet americain', image: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Bakkerij_De_Korenaar._Surhuisterveen.JPG' },
+            { id: 6, name: 'Broodje bal', price: 3.75, category: 'broodjes', description: 'Met verse gehaktbal en mosterd', image: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Bakkerij_De_Korenaar._Surhuisterveen.JPG' },
+            { id: 7, name: 'Broodje carpaccio', price: 4.25, category: 'broodjes', description: 'Luxe broodje met carpaccio', image: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Bakkerij_De_Korenaar._Surhuisterveen.JPG' },
+            { id: 8, name: 'Broodje tonijn', price: 3.95, category: 'broodjes', description: 'Heerlijke tonijnsalade op vers brood', image: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Bakkerij_De_Korenaar._Surhuisterveen.JPG' },
 
             // Brood
-            { id: 9, name: 'Volkoren brood', price: 3.45, category: 'brood', description: 'Gezond volkoren brood, dagvers gebakken', image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=400&fit=crop' },
-            { id: 10, name: 'Wit tijgerbrood', price: 2.95, category: 'brood', description: 'Knapperig wit brood met tijgerpatroon', image: 'https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=400&h=400&fit=crop' },
-            { id: 11, name: 'Desembrood', price: 4.95, category: 'brood', description: 'Ambachtelijk desembrood, 24u gerijpt', image: 'https://images.unsplash.com/photo-1585478259715-876acc5be8eb?w=400&h=400&fit=crop' },
-            { id: 12, name: 'Meergranenbrood', price: 3.75, category: 'brood', description: 'Vol met granen en zaden', image: 'https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=400&h=400&fit=crop' },
-            { id: 13, name: 'Stokbrood', price: 2.25, category: 'brood', description: 'Krokant Frans stokbrood', image: 'https://images.unsplash.com/photo-1534620808146-d33bb39128b2?w=400&h=400&fit=crop' },
+            { id: 9, name: 'Volkoren brood', price: 3.45, category: 'brood', description: 'Gezond volkoren brood, dagvers gebakken', image: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Bakkerij_De_Korenaar._Surhuisterveen.JPG' },
+            { id: 10, name: 'Wit tijgerbrood', price: 2.95, category: 'brood', description: 'Knapperig wit brood met tijgerpatroon', image: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Bakkerij_De_Korenaar._Surhuisterveen.JPG' },
+            { id: 11, name: 'Desembrood', price: 4.95, category: 'brood', description: 'Ambachtelijk desembrood, 24u gerijpt', image: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Bakkerij_De_Korenaar._Surhuisterveen.JPG' },
+            { id: 12, name: 'Meergranenbrood', price: 3.75, category: 'brood', description: 'Vol met granen en zaden', image: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Bakkerij_De_Korenaar._Surhuisterveen.JPG' },
+            { id: 13, name: 'Stokbrood', price: 2.25, category: 'brood', description: 'Krokant Frans stokbrood', image: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Bakkerij_De_Korenaar._Surhuisterveen.JPG' },
 
             // Pistolets
-            { id: 14, name: 'Wit pistolet', price: 0.65, category: 'pistolets', description: 'Klassiek wit pistolet', image: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&h=400&fit=crop' },
-            { id: 15, name: 'Volkoren pistolet', price: 0.75, category: 'pistolets', description: 'Gezond volkoren pistolet', image: 'https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=400&h=400&fit=crop' },
-            { id: 16, name: 'Meergranen pistolet', price: 0.85, category: 'pistolets', description: 'Met pitten en zaden', image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=400&fit=crop' },
+            { id: 14, name: 'Wit pistolet', price: 0.65, category: 'pistolets', description: 'Klassiek wit pistolet', image: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Bakkerij_De_Korenaar._Surhuisterveen.JPG' },
+            { id: 15, name: 'Volkoren pistolet', price: 0.75, category: 'pistolets', description: 'Gezond volkoren pistolet', image: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Bakkerij_De_Korenaar._Surhuisterveen.JPG' },
+            { id: 16, name: 'Meergranen pistolet', price: 0.85, category: 'pistolets', description: 'Met pitten en zaden', image: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Bakkerij_De_Korenaar._Surhuisterveen.JPG' },
 
             // Banket
-            { id: 17, name: 'Croissant', price: 1.95, category: 'banket', description: 'Krokante Franse croissant', image: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&h=400&fit=crop' },
-            { id: 18, name: 'Koffiebroodje', price: 2.45, category: 'banket', description: 'Met amandelspijs gevuld', image: 'https://images.unsplash.com/photo-1550617931-e17a7b70dce2?w=400&h=400&fit=crop' },
-            { id: 19, name: 'Roomboterkoek', price: 8.95, category: 'banket', description: 'Hele koek met pure roomboter', image: 'https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=400&h=400&fit=crop' },
+            { id: 17, name: 'Croissant', price: 1.95, category: 'banket', description: 'Krokante Franse croissant', image: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Bakkerij_De_Korenaar._Surhuisterveen.JPG' },
+            { id: 18, name: 'Koffiebroodje', price: 2.45, category: 'banket', description: 'Met amandelspijs gevuld', image: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Bakkerij_De_Korenaar._Surhuisterveen.JPG' },
+            { id: 19, name: 'Roomboterkoek', price: 8.95, category: 'banket', description: 'Hele koek met pure roomboter', image: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Bakkerij_De_Korenaar._Surhuisterveen.JPG' },
 
             // Taarten
-            { id: 20, name: 'Slagroomtaart', price: 24.95, category: 'taarten', description: 'Klassieke slagroomtaart, 8 personen', image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=400&fit=crop' },
-            { id: 21, name: 'Appeltaart', price: 18.95, category: 'taarten', description: 'Hollandse appeltaart, 8 personen', image: 'https://images.unsplash.com/photo-1562440499-64c9a0d97def?w=400&h=400&fit=crop' },
-            { id: 22, name: 'Chocoladetaart', price: 26.95, category: 'taarten', description: 'Rijke chocoladetaart', image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=400&fit=crop' },
+            { id: 20, name: 'Slagroomtaart', price: 24.95, category: 'taarten', description: 'Klassieke slagroomtaart, 8 personen', image: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Bakkerij_De_Korenaar._Surhuisterveen.JPG' },
+            { id: 21, name: 'Appeltaart', price: 18.95, category: 'taarten', description: 'Hollandse appeltaart, 8 personen', image: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Bakkerij_De_Korenaar._Surhuisterveen.JPG' },
+            { id: 22, name: 'Chocoladetaart', price: 26.95, category: 'taarten', description: 'Rijke chocoladetaart', image: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Bakkerij_De_Korenaar._Surhuisterveen.JPG' },
         ];
 
         // State
