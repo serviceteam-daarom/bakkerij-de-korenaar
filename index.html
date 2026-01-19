@@ -6,447 +6,19 @@
     <title>Echte Bakker De Korenaar | Ambachtelijke bakkerij in Surhuisterveen</title>
     <meta name="description" content="Ambachtelijk brood, banket en taarten. Bestel eenvoudig online of haal af in Surhuisterveen. Dagvers, lokaal en met liefde gebakken.">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="shared.css">
-
-    <style>
-        :root {
-            --primary: #8B4513;
-            --primary-dark: #6B3410;
-            --accent: #E91E63;
-            --accent-dark: #C2185B;
-            --success: #4CAF50;
-            --white: #FFFFFF;
-            --gray-50: #FAFAFA;
-            --gray-100: #F5F5F5;
-            --gray-200: #E8E8E8;
-            --gray-300: #D4D4D4;
-            --gray-500: #737373;
-            --gray-700: #404040;
-            --gray-900: #171717;
-            --text-xs: 0.75rem;
-            --text-sm: 0.875rem;
-            --text-base: 1rem;
-            --text-lg: 1.125rem;
-            --text-xl: 1.25rem;
-            --text-2xl: 1.5rem;
-            --text-3xl: 1.875rem;
-            --text-4xl: 2.25rem;
-            --text-5xl: 3rem;
-            --space-2: 0.5rem;
-            --space-3: 0.75rem;
-            --space-4: 1rem;
-            --space-5: 1.25rem;
-            --space-6: 1.5rem;
-            --space-8: 2rem;
-            --space-10: 2.5rem;
-            --space-12: 3rem;
-            --space-16: 4rem;
-            --radius: 0.5rem;
-            --radius-md: 0.75rem;
-            --radius-lg: 1rem;
-            --shadow-sm: 0 1px 2px rgba(0,0,0,0.06);
-            --shadow: 0 4px 10px rgba(0,0,0,0.08);
-            --shadow-lg: 0 12px 30px rgba(0,0,0,0.12);
-            --max-width: 1280px;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: var(--gray-50);
-            color: var(--gray-900);
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        img {
-            max-width: 100%;
-            display: block;
-        }
-
-        .container {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 0 var(--space-6);
-        }
-
-        .btn {
-            border-radius: var(--radius);
-            padding: var(--space-3) var(--space-5);
-            font-weight: 600;
-            font-size: var(--text-sm);
-            border: none;
-            cursor: pointer;
-            transition: 0.2s ease;
-            display: inline-flex;
-            align-items: center;
-            gap: var(--space-2);
-        }
-
-        .btn-primary {
-            background: var(--accent);
-            color: var(--white);
-            box-shadow: var(--shadow);
-        }
-
-        .btn-primary:hover {
-            background: var(--accent-dark);
-            transform: translateY(-1px);
-        }
-
-        .btn-secondary {
-            background: var(--gray-100);
-            color: var(--gray-700);
-        }
-
-        .btn-secondary:hover {
-            background: var(--gray-200);
-        }
-
-        .hero {
-            padding: var(--space-16) 0 var(--space-12);
-            background: radial-gradient(circle at top left, rgba(233, 30, 99, 0.08), transparent 55%),
-                radial-gradient(circle at bottom right, rgba(139, 69, 19, 0.1), transparent 45%);
-        }
-
-        .hero-grid {
-            display: grid;
-            gap: var(--space-10);
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            align-items: center;
-        }
-
-        .hero h1 {
-            font-size: clamp(2.5rem, 4vw, 3.5rem);
-            line-height: 1.1;
-            margin-bottom: var(--space-5);
-        }
-
-        .hero p {
-            font-size: var(--text-lg);
-            color: var(--gray-700);
-            margin-bottom: var(--space-6);
-        }
-
-        .hero-actions {
-            display: flex;
-            flex-wrap: wrap;
-            gap: var(--space-4);
-            margin-bottom: var(--space-6);
-        }
-
-        .hero-badges {
-            display: flex;
-            flex-wrap: wrap;
-            gap: var(--space-3);
-            font-size: var(--text-sm);
-            color: var(--gray-700);
-        }
-
-        .hero-badge {
-            background: var(--white);
-            border: 1px solid var(--gray-200);
-            padding: var(--space-2) var(--space-4);
-            border-radius: 999px;
-            display: inline-flex;
-            align-items: center;
-            gap: var(--space-2);
-            box-shadow: var(--shadow-sm);
-        }
-
-        .hero-card {
-            background: var(--white);
-            border-radius: var(--radius-lg);
-            box-shadow: var(--shadow-lg);
-            overflow: hidden;
-            display: grid;
-        }
-
-        .hero-card img {
-            height: 320px;
-            object-fit: cover;
-            width: 100%;
-        }
-
-        .hero-card-content {
-            padding: var(--space-6);
-        }
-
-        .hero-card-content h3 {
-            font-size: var(--text-xl);
-            margin-bottom: var(--space-3);
-        }
-
-        .hero-card-content ul {
-            list-style: none;
-            display: grid;
-            gap: var(--space-2);
-            font-size: var(--text-sm);
-            color: var(--gray-700);
-        }
-
-        .hero-card-content li::before {
-            content: "✓";
-            color: var(--success);
-            margin-right: var(--space-2);
-            font-weight: 700;
-        }
-
-        .section {
-            padding: var(--space-12) 0;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: var(--space-8);
-        }
-
-        .section-title h2 {
-            font-size: var(--text-4xl);
-            margin-bottom: var(--space-3);
-        }
-
-        .section-title p {
-            color: var(--gray-700);
-        }
-
-        .usp-grid {
-            display: grid;
-            gap: var(--space-6);
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        }
-
-        .usp-card {
-            background: var(--white);
-            padding: var(--space-6);
-            border-radius: var(--radius-lg);
-            box-shadow: var(--shadow);
-        }
-
-        .usp-card i {
-            font-size: 1.75rem;
-            color: var(--primary);
-            margin-bottom: var(--space-3);
-        }
-
-        .usp-card h3 {
-            font-size: var(--text-lg);
-            margin-bottom: var(--space-2);
-        }
-
-        .usp-card p {
-            color: var(--gray-700);
-            font-size: var(--text-sm);
-        }
-
-        .highlight-grid {
-            display: grid;
-            gap: var(--space-6);
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        }
-
-        .highlight-card {
-            background: var(--white);
-            border-radius: var(--radius-lg);
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            display: grid;
-        }
-
-        .highlight-card img {
-            height: 180px;
-            object-fit: cover;
-        }
-
-        .highlight-card-content {
-            padding: var(--space-5);
-        }
-
-        .highlight-card-content h4 {
-            font-size: var(--text-lg);
-            margin-bottom: var(--space-2);
-        }
-
-        .highlight-card-content p {
-            font-size: var(--text-sm);
-            color: var(--gray-700);
-            margin-bottom: var(--space-3);
-        }
-
-        .highlight-card-content span {
-            font-weight: 600;
-            color: var(--primary-dark);
-        }
-
-        .steps {
-            display: grid;
-            gap: var(--space-6);
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        }
-
-        .step-card {
-            background: var(--white);
-            border-radius: var(--radius-lg);
-            padding: var(--space-6);
-            box-shadow: var(--shadow);
-        }
-
-        .step-number {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: var(--primary);
-            color: var(--white);
-            display: grid;
-            place-items: center;
-            font-weight: 700;
-            margin-bottom: var(--space-3);
-        }
-
-        .reviews {
-            background: var(--white);
-        }
-
-        .review-grid {
-            display: grid;
-            gap: var(--space-6);
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        }
-
-        .review-card {
-            border: 1px solid var(--gray-200);
-            border-radius: var(--radius-lg);
-            padding: var(--space-6);
-            box-shadow: var(--shadow-sm);
-        }
-
-        .review-card .stars {
-            color: #F4B400;
-            margin-bottom: var(--space-3);
-        }
-
-        .review-card p {
-            color: var(--gray-700);
-            font-size: var(--text-sm);
-            margin-bottom: var(--space-4);
-        }
-
-        .review-author {
-            font-weight: 600;
-        }
-
-        .cta-panel {
-            background: linear-gradient(120deg, rgba(139, 69, 19, 0.95), rgba(233, 30, 99, 0.9));
-            color: var(--white);
-            border-radius: var(--radius-lg);
-            padding: var(--space-10);
-            display: grid;
-            gap: var(--space-4);
-            align-items: center;
-            text-align: center;
-        }
-
-        .cta-panel h3 {
-            font-size: var(--text-3xl);
-        }
-
-        .cta-panel p {
-            opacity: 0.95;
-        }
-
-        .faq-grid {
-            display: grid;
-            gap: var(--space-6);
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        }
-
-        .faq-card {
-            background: var(--white);
-            border-radius: var(--radius-lg);
-            padding: var(--space-6);
-            box-shadow: var(--shadow);
-        }
-
-        .faq-card h4 {
-            margin-bottom: var(--space-2);
-        }
-
-        .footer {
-            background: var(--gray-900);
-            color: var(--white);
-            padding: var(--space-12) 0 var(--space-6);
-        }
-
-        .footer-grid {
-            display: grid;
-            gap: var(--space-6);
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            margin-bottom: var(--space-6);
-        }
-
-        .footer h4 {
-            margin-bottom: var(--space-3);
-        }
-
-        .footer a {
-            color: rgba(255,255,255,0.8);
-            display: block;
-            margin-bottom: var(--space-2);
-            font-size: var(--text-sm);
-        }
-
-        .footer-bottom {
-            border-top: 1px solid rgba(255,255,255,0.1);
-            padding-top: var(--space-4);
-            font-size: var(--text-xs);
-            color: rgba(255,255,255,0.6);
-            text-align: center;
-        }
-
-        @media (max-width: 900px) {
-            .nav-links {
-                display: none;
-            }
-        }
-
-        @media (max-width: 600px) {
-            .hero-actions {
-                flex-direction: column;
-                align-items: stretch;
-            }
-
-            .hero-card img {
-                height: 220px;
-            }
-
-            .cta-panel {
-                padding: var(--space-8);
-            }
-        }
-    </style>
 </head>
 <body>
     <div class="top-bar">
         <div class="top-bar-content">
             <div class="top-bar-item">
-                <i class="fas fa-truck"></i>
-                <span>Gratis bezorging vanaf €30</span>
+                <i class="fas fa-phone"></i>
+                <span>+31 512 361 262</span>
             </div>
             <div class="top-bar-item">
                 <i class="fas fa-clock"></i>
-                <span>Bestel voor 18:00u, morgen geleverd</span>
-            </div>
-            <div class="top-bar-item">
-                <i class="fas fa-phone"></i>
-                <span>0512 361 262</span>
+                <span>Ma - Za: 07:00 - 18:00</span>
             </div>
         </div>
     </div>
@@ -460,115 +32,55 @@
                 <div class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
                 </div>
-                <div class="nav-item has-dropdown">
-                    <a class="nav-link" href="assortiment.html">Assortiment <i class="fas fa-chevron-down"></i></a>
-                    <div class="dropdown-menu">
-                        <a href="brood.html">Brood</a>
-                        <a href="banket.html">Banket</a>
-                        <a href="taarten.html">Taarten</a>
-                        <a href="belegde-broodjes.html">Belegde broodjes</a>
-                    </div>
+                <div class="nav-item">
+                    <a class="nav-link" href="assortiment.html">Bakery</a>
                 </div>
-                <div class="nav-item has-dropdown">
-                    <a class="nav-link" href="bestel.html">Bestellen <i class="fas fa-chevron-down"></i></a>
-                    <div class="dropdown-menu">
-                        <a href="bezorging.html">Bezorging</a>
-                    </div>
+                <div class="nav-item">
+                    <a class="nav-link" href="zakelijk.html">Local food</a>
                 </div>
-                <div class="nav-item has-dropdown">
-                    <a class="nav-link" href="over-ons.html">Over ons <i class="fas fa-chevron-down"></i></a>
-                    <div class="dropdown-menu">
-                        <a href="over-ons.html">Onze bakkerij</a>
-                        <a href="zakelijk.html">Zakelijk</a>
-                        <a href="allergenen.html">Allergenen</a>
-                    </div>
+                <div class="nav-item">
+                    <a class="nav-link" href="bezorging.html">Catering support</a>
                 </div>
                 <div class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
                 </div>
+                <div class="nav-item">
+                    <a class="nav-link" href="over-ons.html">Over ons</a>
+                </div>
             </nav>
             <div class="header-actions">
-                <a href="tel:0512361262" class="header-btn btn-secondary">
-                    <i class="fas fa-phone"></i>
-                    <span>Bel ons</span>
-                </a>
-                <button class="header-btn btn-cart">
-                    <i class="fas fa-shopping-cart"></i>
-                    <span>Winkelwagen</span>
-                    <span class="cart-count">0</span>
-                </button>
+                <a href="bestel.html" class="header-btn btn-primary">Bestellen</a>
             </div>
         </div>
     </header>
 
     <section class="hero">
-        <div class="container hero-grid">
-            <div>
-                <h1>Ambachtelijke bakkerij met de smaak van thuis</h1>
-                <p>Dagvers brood, banket en taarten uit Surhuisterveen. Bestel in 2 minuten, kies je bezorgmoment en wij bakken het op maat.</p>
+        <div class="container">
+            <div class="hero-content">
+                <div class="eyebrow">Lorem ipsum dolor sit amet</div>
+                <h1>B&amp;B ambachtelijke bakkerij</h1>
                 <div class="hero-actions">
-                    <a class="btn btn-primary" href="bestel.html"><i class="fas fa-bag-shopping"></i>Start je bestelling</a>
-                    <a class="btn btn-secondary" href="#assortiment"><i class="fas fa-bread-slice"></i>Bekijk assortiment</a>
-                </div>
-                <div class="hero-badges">
-                    <div class="hero-badge"><i class="fas fa-star"></i>4,9/5 klantwaardering</div>
-                    <div class="hero-badge"><i class="fas fa-seedling"></i>Lokale ingrediënten</div>
-                    <div class="hero-badge"><i class="fas fa-clock"></i>Voor 18:00 besteld</div>
-                </div>
-            </div>
-            <div class="hero-card">
-                <img src="https://images.unsplash.com/photo-1489533119213-66a5cd877091?auto=format&fit=crop&w=1200&q=80" alt="Ambachtelijke bakkerij met vers brood">
-                <div class="hero-card-content">
-                    <h3>Waarom klanten terugkomen</h3>
-                    <ul>
-                        <li>Ambachtelijk gebakken, elke ochtend vers</li>
-                        <li>Bezorgen of afhalen wanneer het jou uitkomt</li>
-                        <li>Persoonlijke service van ons team</li>
-                    </ul>
+                    <a class="header-btn btn-secondary" href="assortiment.html">Meer over ons</a>
+                    <a class="header-btn btn-outline" href="bestel.html">Neem contact op</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section" id="assortiment">
-        <div class="container">
-            <div class="section-title">
-                <h2>Favorieten uit de bakkerij</h2>
-                <p>Populaire keuzes voor ontbijt, lunch en traktaties.</p>
+    <section class="section">
+        <div class="container split-section">
+            <div class="split-image">
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80" alt="Vers buffet met brood en banket">
+                <div class="stat-card">
+                    <h3>100+</h3>
+                    <p>Klantcases</p>
+                </div>
             </div>
-            <div class="highlight-grid">
-                <article class="highlight-card">
-                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" alt="Dagvers brood">
-                    <div class="highlight-card-content">
-                        <h4>Dagvers brood</h4>
-                        <p>Krokant van buiten, zacht van binnen. Kies uit volkoren, desem en meergranen.</p>
-                        <span>Vanaf €2,25</span>
-                    </div>
-                </article>
-                <article class="highlight-card">
-                    <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=80" alt="Banket">
-                    <div class="highlight-card-content">
-                        <h4>Banket & lekkernijen</h4>
-                        <p>Roomboterkoek, croissants en seizoensspecials die je dag maken.</p>
-                        <span>Vers voor je gebakken</span>
-                    </div>
-                </article>
-                <article class="highlight-card">
-                    <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=800&q=80" alt="Taarten">
-                    <div class="highlight-card-content">
-                        <h4>Taarten op maat</h4>
-                        <p>Van klassiek slagroom tot luxe chocolade. Ideaal voor elke gelegenheid.</p>
-                        <span>Vanaf €18,95</span>
-                    </div>
-                </article>
-                <article class="highlight-card">
-                    <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80" alt="Belegde broodjes">
-                    <div class="highlight-card-content">
-                        <h4>Belegde broodjes</h4>
-                        <p>Vers belegd en snel klaar. Perfect voor lunch of een meeting.</p>
-                        <span>Vandaag nog af te halen</span>
-                    </div>
-                </article>
+            <div class="text-panel">
+                <span class="eyebrow">Bakkerij</span>
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                <a class="header-btn btn-primary" href="over-ons.html">Meer over ons</a>
             </div>
         </div>
     </section>
@@ -576,95 +88,106 @@
     <section class="section">
         <div class="container">
             <div class="section-title">
-                <h2>Waarom De Korenaar</h2>
-                <p>UX die vertrouwen wekt en conversie stimuleert.</p>
+                <span>Bakkers</span>
+                <h2>Lorem ipsum dolor sit amet</h2>
             </div>
-            <div class="usp-grid">
-                <div class="usp-card">
-                    <i class="fas fa-bread-slice"></i>
-                    <h3>Elke dag vers</h3>
-                    <p>We bakken doorlopend zodat je altijd de beste smaak krijgt, thuis of in de winkel.</p>
-                </div>
-                <div class="usp-card">
-                    <i class="fas fa-truck"></i>
-                    <h3>Flexibele bezorging</h3>
-                    <p>Kies zelf je bezorgmoment of haal af zonder wachtrij.</p>
-                </div>
-                <div class="usp-card">
-                    <i class="fas fa-heart"></i>
-                    <h3>Persoonlijk advies</h3>
-                    <p>Bel ons voor allergenen, speciale wensen of grote bestellingen.</p>
-                </div>
-                <div class="usp-card">
-                    <i class="fas fa-lock"></i>
-                    <h3>Veilig betalen</h3>
-                    <p>Betaling gaat via een beveiligde checkout met meerdere opties.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section" id="werkwijze">
-        <div class="container">
-            <div class="section-title">
-                <h2>Bestellen in 3 simpele stappen</h2>
-                <p>Een frictieloze flow, van keuze tot genietmoment.</p>
-            </div>
-            <div class="steps">
-                <div class="step-card">
-                    <div class="step-number">1</div>
-                    <h3>Kies je favorieten</h3>
-                    <p>Selecteer brood, banket of taarten en voeg ze toe aan je winkelwagen.</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">2</div>
-                    <h3>Kies bezorging of afhalen</h3>
-                    <p>Vul je adres in of kom langs in Surhuisterveen op een tijd die jou past.</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">3</div>
-                    <h3>Wij bakken het vers</h3>
-                    <p>Onze bakkers gaan direct voor je aan de slag. Geniet zorgeloos.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section reviews" id="reviews">
-        <div class="container">
-            <div class="section-title">
-                <h2>Klanten aan het woord</h2>
-                <p>Social proof die vertrouwen geeft.</p>
-            </div>
-            <div class="review-grid">
-                <div class="review-card">
-                    <div class="stars">★★★★★</div>
-                    <p>“Altijd warme broodjes en snelle service. Online bestellen is super overzichtelijk.”</p>
-                    <div class="review-author">— Anne, Surhuisterveen</div>
-                </div>
-                <div class="review-card">
-                    <div class="stars">★★★★★</div>
-                    <p>“De taarten zijn fenomenaal. Het bestelproces is echt kinderlijk eenvoudig.”</p>
-                    <div class="review-author">— Marcel, Harkema</div>
-                </div>
-                <div class="review-card">
-                    <div class="stars">★★★★★</div>
-                    <p>“Voor 18:00 besteld, en de volgende ochtend stond het klaar. Heel prettig!”</p>
-                    <div class="review-author">— Lotte, Surhuisterveen</div>
-                </div>
+            <div class="product-grid">
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&w=600&q=80" alt="Brood">
+                    <h4>Brood</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                    <span class="icon-btn"><i class="fas fa-arrow-right"></i></span>
+                </article>
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?auto=format&fit=crop&w=600&q=80" alt="Banket">
+                    <h4>Banket</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                    <span class="icon-btn"><i class="fas fa-arrow-right"></i></span>
+                </article>
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80" alt="Belegde broodjes">
+                    <h4>Belegde broodjes</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                    <span class="icon-btn"><i class="fas fa-arrow-right"></i></span>
+                </article>
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=80" alt="Meer">
+                    <h4>Meer</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                    <span class="icon-btn"><i class="fas fa-arrow-right"></i></span>
+                </article>
             </div>
         </div>
     </section>
 
     <section class="section">
         <div class="container">
-            <div class="cta-panel">
-                <h3>Begin vandaag nog met vers bestellen</h3>
-                <p>Laat ons weten wanneer je het wilt ontvangen en wij regelen de rest.</p>
-                <div class="hero-actions" style="justify-content: center;">
-                    <a class="btn btn-primary" href="bestel.html"><i class="fas fa-bag-shopping"></i>Bestel nu</a>
-                    <a class="btn btn-secondary" href="tel:0512361262"><i class="fas fa-phone"></i>Bel voor advies</a>
+            <div class="promo-banner">
+                <div class="promo-banner-content">
+                    <span class="eyebrow">Full bakery</span>
+                    <h2>Alles altijd vers bereid lorem ipsum dolor.</h2>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container split-feature">
+            <div>
+                <span class="eyebrow">Assortiment</span>
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+            </div>
+            <div class="service-grid">
+                <article class="service-card">
+                    <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=80" alt="B&amp;B Bakery">
+                    <div class="service-card-content">
+                        <h4>B&amp;B Bakery</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="assortiment.html">Lees meer</a>
+                    </div>
+                </article>
+                <article class="service-card">
+                    <img src="https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?auto=format&fit=crop&w=800&q=80" alt="B&amp;B Local food">
+                    <div class="service-card-content">
+                        <h4>B&amp;B Local food</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="zakelijk.html">Lees meer</a>
+                    </div>
+                </article>
+                <article class="service-card">
+                    <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=800&q=80" alt="B&amp;B Catering support">
+                    <div class="service-card-content">
+                        <h4>B&amp;B Catering support</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="bezorging.html">Lees meer</a>
+                    </div>
+                </article>
+                <article class="service-card">
+                    <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=800&q=80" alt="B&amp;B Event">
+                    <div class="service-card-content">
+                        <h4>B&amp;B Event</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="contact.html">Lees meer</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container split-feature">
+            <div class="feature-card">
+                <span class="eyebrow">De lekkerste broodjes</span>
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+                <a class="header-btn btn-primary" href="assortiment.html">Bekijk assortiment</a>
+            </div>
+            <div class="feature-card" style="background: var(--primary-dark); color: var(--white);">
+                <span class="eyebrow" style="color: var(--accent);">Heb je een andere vraag?</span>
+                <h3>Neem contact op</h3>
+                <p style="color: rgba(255,255,255,0.75);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+                <a class="header-btn btn-outline" href="contact.html">Neem contact op</a>
             </div>
         </div>
     </section>
@@ -672,58 +195,64 @@
     <section class="section">
         <div class="container">
             <div class="section-title">
-                <h2>Veelgestelde vragen</h2>
-                <p>We nemen eventuele twijfels direct weg.</p>
+                <span>Reviews</span>
+                <h2>Wat onze klanten vertellen</h2>
             </div>
-            <div class="faq-grid">
-                <div class="faq-card">
-                    <h4>Wanneer kan ik mijn bestelling ophalen?</h4>
-                    <p>Na het plaatsen kies je direct een tijdvak. We zorgen dat alles dan klaarstaat.</p>
-                </div>
-                <div class="faq-card">
-                    <h4>Kunnen jullie ook bezorgen?</h4>
-                    <p>Ja, in Surhuisterveen en omgeving. Kies je bezorgmoment in de checkout.</p>
-                </div>
-                <div class="faq-card">
-                    <h4>Hoe ver van tevoren bestellen?</h4>
-                    <p>Voor 18:00 bestellen is meestal al genoeg. Voor maatwerk taarten liever 48 uur.</p>
-                </div>
+            <div class="testimonial-grid">
+                <article class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.”</p>
+                    <strong>John Doe</strong><br>
+                    <small>Bestelproces</small>
+                </article>
+                <article class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.”</p>
+                    <strong>John Doe</strong><br>
+                    <small>Bestelproces</small>
+                </article>
+                <article class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.”</p>
+                    <strong>John Doe</strong><br>
+                    <small>Bestelproces</small>
+                </article>
             </div>
+        </div>
+    </section>
+
+    <section class="section" style="padding-bottom: var(--space-8);">
+        <div class="container">
+            <div class="brand-bar">JUMBO JUMBO JUMBO JUMBO JUMBO</div>
+            <p style="text-align:center; margin-top: var(--space-4); color: var(--gray-500);">We hebben meer dan 300 bedrijven geholpen aan onze horeca. Wil jij hier ook bij horen? Neem dan contact met ons op.</p>
         </div>
     </section>
 
     <footer class="footer" id="contact">
         <div class="container">
-            <div class="footer-grid">
-                <div>
-                    <h4>Echte Bakker De Korenaar</h4>
-                    <a href="bestel.html">Online bestellen</a>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Neem contact op</h4>
+                    <p>+31 512 361 262</p>
+                    <p>info@bakkerijdekorenaar.nl</p>
+                    <p>Gedempte Vaart 17</p>
+                    <p>9231 AS Surhuisterveen</p>
+                </div>
+                <div class="footer-section">
+                    <h4>B&amp;B</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Direct naar</h4>
                     <a href="assortiment.html">Assortiment</a>
-                    <a href="over-ons.html">Over ons</a>
-                    <a href="tel:0512361262">0512 361 262</a>
-                    <a href="mailto:info@bakkerijdekorenaar.nl">info@bakkerijdekorenaar.nl</a>
-                </div>
-                <div>
-                    <h4>Bezoekadres</h4>
-                    <a href="#">Gedempte Vaart 17</a>
-                    <a href="#">9231 AS Surhuisterveen</a>
-                    <a href="#">Ma - Za: 07:00 - 18:00</a>
-                </div>
-                <div>
-                    <h4>Service</h4>
-                    <a href="bezorging.html">Bezorginformatie</a>
-                    <a href="allergenen.html">Allergenen & voeding</a>
-                    <a href="zakelijk.html">Zakelijke bestellingen</a>
-                </div>
-                <div>
-                    <h4>Volg ons</h4>
-                    <a href="#">Instagram</a>
-                    <a href="#">Facebook</a>
-                    <a href="#">Google Reviews</a>
+                    <a href="brood.html">Brood</a>
+                    <a href="banket.html">Banket</a>
+                    <a href="belegde-broodjes.html">Belegde broodjes</a>
+                    <a href="contact.html">Contact</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2025 Echte Bakker De Korenaar. Alle rechten voorbehouden.</p>
+                <p>Ontwikkeld door De Korenaar · Algemene voorwaarden · Privacyverklaring</p>
             </div>
         </div>
     </footer>
